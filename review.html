@@ -1,216 +1,152 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Qiblu</title>
-    <link rel="stylesheet" href="./shopping-cart.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiblu.com</title>
 
-    <link href ='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <script src="./shopping-cart.js" defer></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  </head>
-  <body>
-
-    <header>
-      <div class="nav container".
-        <a href ='#' class="logo">Menu</a>
-
-        <i class='bx bx-shopping-bag' id="cart-icon"></i>
-
-        <div class="cart">  
-          <h2 class="cart-title">Checkout</h2>
-
-          <div class="cart-content">
-
-            <div class="cart-box">
-              <img src="./Image/C1.jpg" alt ="" class="cart-img"> 
-              <div class="detail-box">
-                  <div class="cart-product-title">Spicy Noodle</div>
-                  <div class="cart-price">$15.99</div>
-                  <input type="number" value="1" class="cart-quantity">
-              </div>
-              <i class='bx bxs-trash-alt cart-remove'></i>
-            </div>
-          </div>
-
-          <div class="total">
-            <div class="total-title">Total</div>
-            <div class="total-price">$0</div>
-          </div>
-
-          <button type="button" class="btn-buy">Buy Now</button>
-
-          <i class='bx bx-x' id="close-cart"></i>
-        </div>
-      </div>
-    </Header>
-
-    <section class="shop container">
-      <h2 class="section-title>"Shop Products</h2>
-
-      <div class="shop-content">
-
-        <div class="product-box">
-          <img src="./Image/C1.jpg" alt="" class="product-img">
-          <h2 class="product-title">Spicy Noodle</h2>
-          <span class="price">$18</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/C2.jpeg" alt="" class="product-img">
-          <h2 class="product-title">Fried Chicken</h2>
-          <span class="price">$20</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/C3.jpeg" alt="" class="product-img">
-          <h2 class="product-title">Hot Pizza</h2>
-          <span class="price">$25</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P1.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P2.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P3.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P4.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P5.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/P6.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/D1.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$28.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/D2.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$28.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/D3.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/D4.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-        <div class="product-box">
-          <img src="./Image/D5.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>        
-
-        <div class="product-box">
-          <img src="./Image/D6.jpeg" alt="" class="product-img">
-          <h2 class="product-title"></h2>
-          <span class="price">$15.99</span>
-          <i class='bx bx-shopping-bag add-cart'></i>
-        </div>
-
-    </section>
-
-    <script src="./style.css">"></script>
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="./style.css">
-    <!-- footer section starts  -->
-    <section class="footer">
 
-        <div class="box-container">
+</head>
 
-            <div class="box">
-                <h3>locations</h3>
-                <a href="#">USA</a>
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Qiblu.</a>
 
+    <nav class="navbar">
+        <a class="active" href="https://qiblu.w3spaces.com/dine-in.html">home</a>
+        <a href="https://qiblu.w3spaces.com/dine-in.html">dishes</a>
+        <a href="https://qiblu.w3spaces.com/dine-in.html">about</a>
+        <a href="https://qiblu.w3spaces.com/dine-in.html">menu</a>
+        <a href="https://qiblu.w3spaces.com/dine-in.html">review</a>
+        <a href="./review.html">review form</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="https://qiblu.w3spaces.com/shopping-cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+</header>
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<body>
+<!-- review form section starts  -->
+
+<section class="review" id="review">
+    <br>
+    <br>
+    <br>
+    <h3 class="sub-heading"> Submit A Review Now </h3>
+    <h1 class="heading"> your voice matters! </h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
             </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="#">home</a>
-                <a href="#">dishes</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
-                <a href="#">reivew</a>
-                <a href="#">order</a>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" placeholder="enter your number">
             </div>
-
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#">+718-124-3333</a>
-                <a href="#">123@gmail.com</a>
-                <a href="#">456@gmail.com</a>
-                <a href="#">New York, USA</a>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Table Number</span>
+                <input type="number" placeholder="enter table number">
             </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Comment</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <br>
+                <span>Image Upload</span>
+                <input type="file" id="myFile" name="filename">
+            </div>
+        </div>
 
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">instagram</a>
-                <a href="#">linkedin</a>
-             </div>
+        <input type="submit" value="submit now" class="btn">
+
+    </form>
+
+</section>
+
+<!-- review form section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">USA</a>
 
         </div>
 
-      <div class="credit"> copyright @ 2022 by <span>Qiblu Designer</span> </div>
-    </section>
-    <!-- footer section ends -->
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">dishes</a>
+            <a href="#">about</a>
+            <a href="#">menu</a>
+            <a href="#">reivew</a>
+            <a href="#">order</a>
+        </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+718-124-3333</a>
+            <a href="#">123@gmail.com</a>
+            <a href="#">456@gmail.com</a>
+            <a href="#">New York, USA</a>
+        </div>
 
-    <!-- custom js file link  -->
-    <script src="./script.js"></script>
-  </body>
-  
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright @ 2022 by <span>Qiblu Designer</span> </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="./script.js"></script>
+
+</body>
 </html>
 
-      
+
+ 
+ 
