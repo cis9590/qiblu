@@ -13,6 +13,11 @@
   --main-color: #fd4646;
   --text-color: #171427;
   --bg-color: #fff;
+  --blue:#39619c;
+  --red:#da3e6d;
+  --black:#192a56;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 imag {
@@ -88,7 +93,7 @@ header {
 
 .cart-box {
   display: grid;
-  grid-template-columns: 32% 50% 18%;
+  grid-template-columns: 0% 50% 18%;
   align-items: left;
   gap: 1rem;  
   margin-top: 1rem;
@@ -99,6 +104,7 @@ header {
   height: 100px;
   object-fit: contain;
   padding: 10px;
+  right: 0;
 }
 
 .detail-box {
@@ -232,13 +238,13 @@ header {
 
 .footer .box-container .box h3{
     padding:.5rem 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:var(--black);
 }
 
 .footer .box-container .box a{
     display: block;
-    padding:.5rem 0;
+    padding:.3rem 0;
     font-size: 1.5rem;
     color:var(--light-color);
 }
