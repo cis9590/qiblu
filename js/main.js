@@ -54,7 +54,7 @@ function buyButtonClicked() {
   updatetotal();
 }
 
-// Reomve Items From Cart
+// Remove Items From Cart
 function removeCartItem(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.remove();
