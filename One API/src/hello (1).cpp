@@ -15,7 +15,7 @@ using namespace std;
 using namespace sycl;
 
 int main(){
-  string image_path = "NermalWithBook540.jpg";
+  string image_path = "p2.jpg";
     
   //# define queue which has default device associated for offload
   queue q;
@@ -55,7 +55,7 @@ int main(){
     q.wait_and_throw();
   }
 
-  imwrite("EnlightenedNermalWithBook.png", img);
+  imwrite("p2.png", img);
 
   return 0;
 }

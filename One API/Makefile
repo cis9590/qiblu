@@ -14,9 +14,9 @@ main:
 	$(CXX) $(TMPFIXL) $(CXXFLAGS) $(OPENCV_OPTIONS) $(LDFLAGS) -o $(BINDIR)/$(EXE_NAME) $(SOURCES)
 
 run: 
-	rm -f EnlightenedNermalWithBook.png
-	cp -p Assets/NermalWithBook540.jpg .
+	rm -f p2.png
+	cp -p p2.jpg .
 	LD_LIBRARY_PATH=$(TMPFIX):/opt/intel/openvino/opencv/lib:$(LD_LIBRARY_PATH) $(BINDIR)/$(EXE_NAME)
 
 clean: 
-	rm -rf $(BINDIR)/$(EXE_NAME) EnlightenedNermalWithBook.png
+	rm -rf $(BINDIR)/$(EXE_NAME) p2.png
